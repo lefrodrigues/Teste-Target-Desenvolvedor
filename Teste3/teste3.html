@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Faturamento</title>
+    <link rel="stylesheet" href="teste3.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Relatório de Faturamento Mensal de Distribuidora</h1>
+        </header>
+
+        <section id="formulario">
+            <button onclick="carregarRelatorio()">Carregar Relatório</button>
+        </section>
+
+        <section id="resultados" style="display: none;">
+            <h2>Resultados:</h2>
+            <p id="menorFaturamento"></p>
+            <p id="maiorFaturamento"></p>
+            <p id="diasAcimaMedia"></p>
+            <p id="mediaMensal"></p> <!-- Exibindo a média mensal -->
+        </section>
+        
+        <section id="erro" style="display: none;">
+            <p>Erro ao carregar os dados. Verifique o arquivo <strong>dados.json</strong>.</p>
+        </section>
+    </div>
+
+    <script src="teste3.js"></script>
+</body>
+</html>
